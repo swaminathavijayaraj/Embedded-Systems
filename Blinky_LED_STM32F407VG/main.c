@@ -12,7 +12,7 @@
 void delay(void){
 	
 	uint32_t i = 0;
-	for( i=1; i < 5000000; i++); 
+	for( i=1; i < 500000; i++); 
 }
 
 
@@ -27,7 +27,7 @@ int main(void){
 		//Enable Clock 
 		LED_Initialize();		
 				
-		LED_Off(3);
+		
 		LED_On(0); //Green LED 
 		
 		delay();
@@ -45,6 +45,25 @@ int main(void){
 		LED_Off(2);	
 		LED_On(3); //Blue LED					
 		delay();
+		
+		LED_Off(3);
+		
+		delay();
+		delay();
+
+		LED_On(0);
+		LED_On(1);
+		LED_On(2);
+		LED_On(3);
+		
+		delay();		
+		
+		LED_Off(0);
+		LED_Off(1);
+		LED_Off(2);
+		LED_Off(3);
+		
+		delay();		
 		
 	}
 }	 
