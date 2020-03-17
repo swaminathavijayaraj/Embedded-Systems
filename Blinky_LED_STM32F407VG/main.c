@@ -17,6 +17,8 @@ void delay(void){
 
 
 
+//Blink the LED Green -> Orange -> Red -> Blue in a loop
+
 int main(void){
 	
 
